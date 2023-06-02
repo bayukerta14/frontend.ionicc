@@ -1,0 +1,165 @@
+<ion-content [fullscreen]="true"> 
+ 
+  <ion-menu contentId="main-content"> 
+    <ion-header> 
+      <ion-toolbar> 
+        <ion-title class="textmenucontent"color="medium">PILKETUANG</ion-title> 
+      </ion-toolbar> 
+      
+    </ion-header> 
+    <ion-content class="ion-padding"> 
+      <br>
+      <ion-button expand="block" href="http://localhost:8100/hasilpoling" fill="outline">Hasil Poling</ion-button>  
+      <br>
+      <ion-button expand="block" href="http://localhost:8100/home" fill="outline">Log Out</ion-button> 
+    </ion-content>  
+  </ion-menu> 
+  <ion-content class="ion-page" id="main-content"> 
+    <ion-header> 
+      <ion-toolbar>
+        <ion-buttons slot="start">    
+          <ion-menu-button></ion-menu-button> 
+        </ion-buttons> 
+        <ion-title class="textmenu" color="medium">DATA KANDIDAT</ion-title> 
+      </ion-toolbar> 
+    </ion-header> 
+    
+    <div>
+      <ion-card class="card1" color="medium">
+      <ion-card-header>
+        <ion-img src="\assets\icon\RIFKYHDYT.jpg" alt="RIFKYIMG"></ion-img>
+        <ion-card-subtitle class="RTH" >KANDIDAT 01</ion-card-subtitle>
+        <ion-card-title class="namakandidat1">RIFKY TAUFIK HIDAYAT</ion-card-title>
+
+      </ion-card-header>
+    
+      <ion-card-content class="VISI1"> VISI </ion-card-content>
+      <ion-card-content class="ISIVISI1"> Merangkul mahasiswa agar lebih kompak </ion-card-content>
+      <ion-card-content class="MISI1"> MISI </ion-card-content>
+      <ion-card-content class="ISIMISI1"> ISIMISI</ion-card-content>
+    </ion-card>
+  </div>
+      
+    <ion-card class="card2" color="medium">
+      <ion-card-header>
+        <ion-img src="\assets\icon\BAPE.jpg" alt="BAPEIMG"></ion-img>
+        <ion-card-subtitle class="BIP" >KANDIDAT 02</ion-card-subtitle>
+        <ion-card-title class="namakandidat2">BAYU IMANUDIN PUTRA</ion-card-title>
+      </ion-card-header>
+    
+      <ion-card-content class="VISI2" > VISI </ion-card-content>
+      <ion-card-content class="ISIVISI2" > Merangkul mahasiswa agar lebih kompak </ion-card-content>
+      <ion-card-content class="MISI2" > MISI </ion-card-content>
+      <ion-card-content class="ISIMISI2" > ISIMISI </ion-card-content>
+    </ion-card>
+    
+  <ion-card class="card3" color="medium">
+    <ion-card-header>
+      <ion-img src="\assets\icon\ALIMUDIN.jpg" alt="ALIMUDINIMG"></ion-img>
+      <ion-card-subtitle class="AMN" >KANDIDAT 03</ion-card-subtitle>
+      <ion-card-title class="namakandidat3">ALI MUDIN</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content class="VISI3"> VISI </ion-card-content>
+    <ion-card-content class="ISIVISI3">Merangkul mahasiswa agar lebih kompak </ion-card-content>
+    <ion-card-content class="MISI3"> MISI </ion-card-content>
+    <ion-card-content class="ISIMISI3"> ISIMISI </ion-card-content>
+  </ion-card>
+  
+  <ion-card class="card4" color="medium">
+    <ion-card-header>
+      <ion-img src="\assets\icon\BAKER.jpg" alt="BAKERIMG"></ion-img>
+      <ion-card-subtitle class="BKSG" >KANDIDAT 04</ion-card-subtitle>
+      <ion-card-title class="namakandidat4">BAYU KERTA SUKMA GANDARA</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content class="VISI4"> VISI </ion-card-content>
+    <ion-card-content class="ISIVISI4"> Merangkul mahasiswa agar lebih kompak </ion-card-content>
+    <ion-card-content class="MISI4"> MISI </ion-card-content>
+    <ion-card-content class="ISIMISI4"> ISIMISI </ion-card-content>
+  </ion-card>
+   <ion-content class="ion-padding">
+      <ion-button id="open-custom-dialog" expand="block">MULAIN POLING</ion-button>
+    
+      <ion-modal id="example-modal" #modal trigger="open-custom-dialog">
+        <ng-template>
+          <div class="wrapper">
+            <h1>MULAI POLING</h1>
+    
+            <ion-content>
+              <ion-list lines="none">
+                <ion-item class="rifkypoling" button="true" detail="false" (click)="modal.dismiss()">
+                  <ion-img name="person-circle" src="assets\icon\RIFKYHDYT.jpg"></ion-img>
+                  <ion-label>RIFKY TAUFIK HIDAYAT</ion-label>
+                </ion-item>
+                <ion-item class="bapepoling"button="true" detail="false" (click)="modal.dismiss()">
+                  <ion-img name="person-circle" src="assets\icon\BAPE.jpg"></ion-img>
+                  <ion-label>Item 2</ion-label>
+                </ion-item>
+                <ion-item class="alipoling"button="true" detail="false" (click)="modal.dismiss()">
+                  <ion-img name="person-circle" src="assets\icon\ALIMUDIN.jpg"></ion-img>
+                  <ion-label>Item 3</ion-label>
+                </ion-item>
+                <ion-item class="bakerpoling" button="true" detail="false" (click)="modal.dismiss()">
+                  <ion-img name="person-circle" src="assets\icon\BAKER.jpg"></ion-img>
+                  <ion-label>Item 4</ion-label>
+                </ion-item>
+              </ion-list>
+              
+            </ion-content>
+          </div>
+        </ng-template>
+      </ion-modal>
+    </ion-content>
+  </ion-content>
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Data_Kandidat</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <div class="RIFKY"><ion-item>
+    <ion-thumbnail slot="start">
+      <img alt="Silhouette of mountains" src="assets\icon\RIFKYHDYT.jpg" />
+    </ion-thumbnail>
+    <ion-label class="nama_rifky"> RIFKY TAUFIK HIDAYAT </ion-label>
+  </ion-item></div>
+  <div class="ALIMUDIN"><ion-item>
+    <ion-thumbnail slot="start">
+      <img alt="Silhouette of mountains" src="assets\icon\ALIMUDIN.jpg" />
+    </ion-thumbnail>
+    <ion-label class="nama_ali"> ALI MUDIN </ion-label>
+  </ion-item></div>
+  <div class="BAIM"><ion-item>
+    <ion-thumbnail slot="start">
+      <img alt="Silhouette of mountains" src="assets\icon\BAKER.jpg" />
+    </ion-thumbnail>
+    <ion-label class="nama_baker"> BAYU IMANUDIN PUTRA </ion-label>
+  <div class="BAKER">
+    <ion-item>
+    <ion-thumbnail slot="start">
+      <img alt="Silhouette of mountains" src="assets\icon\BAKER.jpg" />
+    </ion-thumbnail>
+    <ion-label class="nama_baker"> BAYU KERTA SUKMA GANDARA </ion-label>
+  </ion-item></div> -->
+
+ 
+ 

@@ -1,0 +1,34 @@
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title class="sign-up" size="small">SIGN UP</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-item fill="line">
+    <ion-label position="floating">Nama</ion-label>
+    <ion-input placeholder="Enter text"></ion-input>
+  </ion-item>
+  
+   <ion-item fill="line">
+    <ion-label position="floating">NIM</ion-label>
+    <ion-input type="NIM" placeholder="Enter text"></ion-input>
+  </ion-item>
+
+  <ion-item fill="line">   
+    
+    <ion-input label="Password" labelPlacement="floating" type="Password" [counter]="showpassword" ></ion-input>
+    <ion-icon slot="end" [name]="passwordToggleIcon"></ion-icon>
+    <!-- <ion-label position="floating">Password</ion-label>
+    <ion-input placeholder="Enter text"></ion-input> -->
+  </ion-item>
+  
+  <ion-item fill="line">
+    <!-- <ion-input label="Konfirmasi Password" labelPlacement="floating" type="KonfirmasiPassword" [counter]="showkonfirmasipassword" ></ion-input>
+    <ion-icon slot="end" [name]="konfirmasipasswordToggleIcon"></ion-icon> -->
+    <ion-label position="floating">Konfirmasi Password</ion-label> 
+     <ion-input type="password" placeholder="Enter text"></ion-input> 
+  </ion-item>
+  <div>
+    <ion-button expand href="http://localhost:8100/home" class="tombolsubmit">Buat Akun</ion-button>
+  </div>
+</ion-content>

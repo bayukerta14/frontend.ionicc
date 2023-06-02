@@ -1,0 +1,14 @@
+
+<div class="ion-page" id="main-content">
+<ion-content class="ion-padding">
+  <ion-img class="image-login" src="assets\icon\LOGOPILKETUANG.png" alt="pilketuang image"></ion-img>
+    
+    <div class="tabell"><ion-input label="NIM" labelPlacement="floating" [counter]="true" maxlength="13"></ion-input>
+    <!-- <ion-input label="Password" labelPlacement="floating" [counter]="true" maxlength="20"></ion-input> -->
+    <ion-input label="Password" labelPlacement="floating" type="password" [counter]="showpassword" ></ion-input>
+    <ion-icon slot="end" [name]="passwordToggleIcon"></ion-icon>
+    <p>Belum punya akun? <a rel="Buat Akun" href="http://localhost:8100/sign-up">Buat Akun</a></p>
+  </div>
+  <div><ion-button expand href="http://localhost:8100/data-kandidat" class="tombolsubmit">SUBMIT</ion-button></div>
+  </ion-content> 
+</div>

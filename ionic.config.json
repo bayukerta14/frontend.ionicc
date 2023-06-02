@@ -1,0 +1,7 @@
+{
+  "name": "VOTING KETUA ANGKATAN",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
